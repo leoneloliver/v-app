@@ -27,18 +27,11 @@
 
         <!--Fonts-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-
-
         <!--Styles plugins-->
         <link rel="stylesheet" href="assets/css/vue-select.css" />
-
         <!--Styles-->
         <link rel="stylesheet" href="assets/css/bootstrap-4.3.1-min.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        
-        
-        
-
         <!--Scripts-->
         <script type="text/javascript" src="assets/js/jquery-3.3.1-min.js"></script>
         <script src="assets/js/popper.js"></script>
@@ -46,13 +39,8 @@
         <!--Scripts plugins-->
         <script type="text/javascript" src="assets/js/vue.js"></script>
         <script type="text/javascript" src="assets/js/vue-select.js"></script>
-        
-    
-        
-    
     </head>
     <body>
-
         <div id="app">
             <div class="container py-3 container-small">
                 <div class="row justify-content-center">
@@ -85,13 +73,13 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-5">
-                                    <my-input label="Phone"></my-input>
+                                        <my-input label="Phone"></my-input>
                                     </div>
                                     <div class="col-4">
-                                    <my-input label="Postal Code"></my-input>
+                                        <my-input label="Postal Code"></my-input>
                                     </div>
                                     <div class="col-3">
-                                    <my-input label="Province"></my-input>
+                                        <my-input label="Province"></my-input>
                                     </div>
                                 </div>
                                 <div class="row my-4" id="map">
@@ -99,24 +87,24 @@
                                 <div class="form-group row show-helper">
                                     <label class="col-md-12 text-uppercase">Date of Birth&nbsp;&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label>
                                     <div class="col-4">
-                                    <div class="selectdiv">
-                                        <v-select :options="optYear" placeholder="YEAR"></v-select>
-                                    </div>
-                                    </div>
-                                    <div class="col-4">
-                                    <div class="selectdiv">
-                                        <v-select :options="optMonth" placeholder="MONTH"></v-select>
-                                    </div>
+                                        <div class="selectdiv">
+                                            <v-select :options="optYear" placeholder="YEAR"></v-select>
+                                        </div>
                                     </div>
                                     <div class="col-4">
-                                    <div class="selectdiv">
-                                        <v-select :options="optDay" placeholder="DAY"></v-select>
+                                        <div class="selectdiv">
+                                            <v-select :options="optMonth" placeholder="MONTH"></v-select>
+                                        </div>
                                     </div>
+                                    <div class="col-4">
+                                        <div class="selectdiv">
+                                            <v-select :options="optDay" placeholder="DAY"></v-select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12 mt-4">
-                                    <button class="btn btn-success btn-lg btn-block shadow btn-extra__rounded" type="submit">Next Step</button>
+                                        <button class="btn btn-success btn-lg btn-block shadow btn-extra__rounded" type="submit">Next Step</button>
                                     </div>
                                 </div>
                             </form>
@@ -126,15 +114,15 @@
                 </div>
             </div>
         </div>
+        <!-- template for inputs -->
         <template id="my-input">
-        <div>
-            <label class="text-uppercase">{{label}}&nbsp;&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label> 
-            <input class="form-control extra-rounded" required="required" type="text">
-        </div>
+            <div>
+                <label class="text-uppercase">{{label}}&nbsp;&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label> 
+                <input class="form-control extra-rounded" required="required" type="text">
+            </div>
         </template>
     
         <script type="text/javascript" src="assets/components/vue-component.js"></script>
-
         <script type="text/javascript" src="assets/js/script.js"></script>
     </body>
 <html>
