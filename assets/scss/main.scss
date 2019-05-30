@@ -1,0 +1,157 @@
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+@mixin transition($what, $time, $how) {
+  -webkit-transition: $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
+}
+hr{
+	border-top: 1px solid rgb(165, 165, 165);
+}
+label{
+	font-size: 0.6em;
+  margin: 0;
+	color: #afaeae;
+}
+.mtn-2{
+	margin-top: -2px;
+}
+.mbs-5{
+	 margin-bottom: 5px;
+}
+.form-control {
+  line-height: 1.8;
+	padding: .5rem .5rem;
+}
+.form-group {
+    margin-bottom: 0.5rem;
+}
+select.form-control {
+  height: 46px;
+}
+.special-title{
+	color: #969696;
+	font-weight: 300;
+}
+.container-small{
+	max-width: 375px;
+}
+.avatar{
+	margin-top: -42px;
+	img{
+		width: 58px;
+	}
+}
+.btn-success {
+	background-color: #85c156;
+	border-color: #85c156;
+	&:hover{
+    background-color: #709e4c;
+    border-color: #709e4c;
+	}
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.vs--searchable .vs__dropdown-toggle{
+   @include border-radius(8px!important);
+}
+.vs__open-indicator {
+    fill: rgb(133, 192, 86);
+}
+.vs__dropdown-menu{
+	max-width: 100px !important;
+	li:hover{
+		background: #85c156;
+	}
+	li:focus{
+		background: #85c156;
+	}
+	li:active{
+		background: #85c156;
+	}
+	li:visited{
+		background: #85c156;
+	}
+}
+.vs__actions {
+    cursor: pointer;
+}
+label i{
+	opacity: 0;
+}
+.show-helper label i{
+	opacity: 9.9;
+}
+
+.extra-rounded,.select{
+	@include border-radius(8px!important);
+}
+.btn-extra__rounded{
+	@include border-radius(15px!important);
+}
+button.btn{
+   cursor: pointer;
+}
+button.vs__clear {
+    display: none;
+}
+input.vs__search {
+    position: relative;
+		color: #ccc;
+}
+.vs--searchable .vs__dropdown-toggle {
+    cursor: text;
+    height: 46px;
+}
+span.vs__selected {
+    margin-top: 5px;
+}
+.spad span.vs__selected{
+	margin-top: 10px;
+}
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+display: none;
+}
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+	text-transform: uppercase;
+	color: #b1b1b1;
+}
+#map{
+	@include transition(all, 0.9s, ease-in-out);
+	height: 0px;
+	iframe{
+	margin: 0 auto;
+	}
+	&.open{
+		@include transition(all, 0.9s, ease-in-out);
+		height: 200px;
+	}
+}
+.vs__selected-options {
+    padding: 0;
+}
+input:-internal-autofill-selected {
+    background-color: #fff !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-toggler {
+			display: block;
+	}
+	.navbar-expand-lg .navbar-collapse {
+			display: none !important;
+			flex-basis: 100%;
+	}
+}

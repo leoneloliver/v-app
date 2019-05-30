@@ -12,6 +12,11 @@
 
         <!-- SEO -->
         <title>V-APP</title>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="V-APP">
+        <meta name="msapplication-TileColor" content="#252525">
+        <meta name=theme-color content=#252525>
         <meta name="author" content="V-APP" />
         <meta name="description" content="A user-friendly app interface for every device." />
 
@@ -26,7 +31,7 @@
         <![endif]-->
 
         <!--Fonts-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         <!--Styles plugins-->
         <link rel="stylesheet" href="assets/css/vue-select.css" />
         <!--Styles-->
@@ -50,19 +55,12 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarText">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Get Started</a>
-                                </li>
-                            </ul>
+                            <!-- <ul class="navbar-nav mr-auto"><li>Menu Items go here</li></ul> -->
                         </div>
                         </nav>
                         <hr class="my-3">
                         <div class="avatar text-center">
-                        <img src="https://randomuser.me/api/portraits/med/women/8.jpg" class="rounded-circle" data-holder-rendered="true">
+                            <img src="assets/img/avatar.jpg" class="rounded-circle" data-holder-rendered="true">
                         </div>
                         <div class="card card-outline-secondary border-0">
                         <div class="card-body">
@@ -85,7 +83,7 @@
                                 <div class="row my-4" id="map">
                                 </div>
                                 <div class="form-group row show-helper">
-                                    <label class="col-md-12 text-uppercase">Date of Birth&nbsp;&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label>
+                                    <label class="col-md-12 text-uppercase mbs-5">Date of Birth&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label>
                                     <div class="col-4">
                                         <div class="selectdiv">
                                             <v-select :options="optYear" placeholder="YEAR"></v-select>
@@ -117,11 +115,12 @@
         <!-- template for inputs -->
         <template id="my-input">
             <div>
-                <label class="text-uppercase">{{label}}&nbsp;&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label> 
-                <input class="form-control extra-rounded" required="required" type="text">
+                <label class="text-uppercase">{{label}}&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label> 
+                <input class="form-control extra-rounded mtn-2" required="required" type="text">
             </div>
         </template>
-    
+        <!-- template for inputs -->
+        <!--Scripts-->
         <script type="text/javascript" src="assets/components/vue-component.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
     </body>
