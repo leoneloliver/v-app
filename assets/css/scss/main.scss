@@ -48,8 +48,8 @@ select.form-control {
 	}
 }
 .btn-success {
-	background-color: #85c156;
-	border-color: #85c156;
+	background-color: #85c525;
+	border-color: #85c525;
 	&:hover{
     background-color: #709e4c;
     border-color: #709e4c;
@@ -67,16 +67,16 @@ select.form-control {
 .vs__dropdown-menu{
 	max-width: 100px !important;
 	li:hover{
-		background: #85c156;
+		background: #85c525;
 	}
 	li:focus{
-		background: #85c156;
+		background: #85c525;
 	}
 	li:active{
-		background: #85c156;
+		background: #85c525;
 	}
 	li:visited{
-		background: #85c156;
+		background: #85c525;
 	}
 }
 .vs__actions {
@@ -135,7 +135,7 @@ display: none;
 	}
 	&.open{
 		@include transition(all, 0.9s, ease-in-out);
-		height: 200px;
+		height: 160px;
 	}
 }
 .vs__selected-options {
