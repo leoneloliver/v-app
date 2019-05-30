@@ -1,117 +1,144 @@
-hr{
-  border-top: 1px solid rgb(165, 165, 165);
+hr {
+  border-top: 1px solid #a5a5a5;
 }
+
 label {
   font-size: 0.6em;
   margin: 0;
   color: #afaeae;
 }
-.mtn-2{
-	margin-top: -2px;
+
+.mtn-2 {
+  margin-top: -2px;
 }
-.mbs-5{
-	 margin-bottom: 5px;
+
+.mbs-5 {
+  margin-bottom: 5px;
 }
+
 .form-control {
   line-height: 1.8;
   padding: .5rem .5rem;
 }
+
 .form-group {
   margin-bottom: 0.5rem;
 }
+
 select.form-control {
   height: 46px;
 }
+
 .special-title {
   color: #969696;
   font-weight: 300;
 }
+
 .container-small {
   max-width: 375px;
 }
+
 .avatar {
   margin-top: -42px;
 }
 .avatar img {
   width: 58px;
 }
+
 .btn-success {
-  background-color: #85c525;
-  border-color: #85c525;
+  background-color: #6fc641;
+  border-color: #6fc641;
 }
 .btn-success:hover {
   background-color: #709e4c;
   border-color: #709e4c;
 }
+
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
+
 .vs--searchable .vs__dropdown-toggle {
   border-radius: 8px !important;
   -webkit-border-radius: 8px !important;
   -moz-border-radius: 8px !important;
 }
+
 .vs__open-indicator {
   fill: #85c056;
 }
+
 .vs__dropdown-menu {
   max-width: 100px !important;
 }
 .vs__dropdown-menu li:hover {
-  background: #85c525;
+  background: #6fc641;
 }
 .vs__dropdown-menu li:focus {
-  background: #85c525;
+  background: #6fc641;
 }
 .vs__dropdown-menu li:active {
-  background: #85c525;
+  background: #6fc641;
 }
 .vs__dropdown-menu li:visited {
-  background: #85c525;
+  background: #6fc641;
 }
+
 .vs__actions {
   cursor: pointer;
 }
+
 label i {
   opacity: 0;
 }
+
 .show-helper label i {
   opacity: 9.9;
 }
+
 .extra-rounded, .select {
   border-radius: 8px !important;
   -webkit-border-radius: 8px !important;
   -moz-border-radius: 8px !important;
 }
+
 .btn-extra__rounded {
   border-radius: 15px !important;
   -webkit-border-radius: 15px !important;
   -moz-border-radius: 15px !important;
 }
+
 button.btn {
   cursor: pointer;
 }
+
 button.vs__clear {
   display: none;
 }
+
 input.vs__search {
   position: relative;
   color: #ccc;
 }
+
 .vs--searchable .vs__dropdown-toggle {
   cursor: text;
   height: 46px;
 }
+
 span.vs__selected {
   margin-top: 5px;
 }
+
 .spad span.vs__selected {
   margin-top: 10px;
 }
+
 /* IE11 hide native button (thanks Matt!) */
 select::-ms-expand {
   display: none;
 }
+
 .selectdiv select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -120,6 +147,7 @@ select::-ms-expand {
   text-transform: uppercase;
   color: #b1b1b1;
 }
+
 #map {
   -webkit-transition: all 0.9s ease-in-out;
   -moz-transition: all 0.9s ease-in-out;
@@ -139,18 +167,22 @@ select::-ms-expand {
   transition: all 0.9s ease-in-out;
   height: 160px;
 }
+
 .vs__selected-options {
   padding: 0;
 }
+
 input:-internal-autofill-selected {
   background-color: #fff !important;
   background-image: none !important;
   color: black !important;
 }
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-toggler {
     display: block;
   }
+
   .navbar-expand-lg .navbar-collapse {
     display: none !important;
     flex-basis: 100%;
