@@ -26,4 +26,3 @@ var appFunctions = {
 	}			
 }	
 appFunctions.init();
-
