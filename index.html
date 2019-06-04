@@ -1,121 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-        <!-- Favicons -->
-        <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicons/favicon.ico">
-        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="assets/img/favicons/favicon.ico">
-        <link rel="apple-touch-icon" href="assets/img/favicons/favicon.ico" />
-
-        <!-- SEO -->
-        <title>V-APP</title>
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="V-APP">
-        <meta name="msapplication-TileColor" content="#6fc641">
-        <meta name=theme-color content=#6fc641>
-        <meta name="author" content="V-APP" />
-        <meta name="description" content="A user-friendly app interface for every device." />
-
-        <!--Polyfills & Browser Fixes-->
-        <link rel="stylesheet" href="assets/css/ie10-viewport-bug-workaround.css" />
-        <script type="text/javascript" src="assets/js/ie10-viewport-bug-workaround.js"></script>
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <!--Fonts-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <!--Styles plugins-->
-        <link rel="stylesheet" href="assets/css/vue-select.css" />
-        <!--Styles-->
-        <link rel="stylesheet" href="assets/css/bootstrap-4.3.1-min.css" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <!--Scripts plugins-->
-        <script type="text/javascript" src="assets/js/vue.js"></script>
-        <script type="text/javascript" src="assets/js/vue-select.js"></script>
-    </head>
-    <body>
-        <div id="app">
-            <div class="container py-3 container-small">
-                <div class="row justify-content-center">
-                    <div>
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarText">
-                            <!-- <ul class="navbar-nav mr-auto"><li>Menu Items go here</li></ul> -->
-                        </div>
-                        </nav>
-                        <hr class="my-3">
-                        <div class="avatar text-center">
-                            <img src="assets/img/avatar.jpeg" class="rounded-circle" data-holder-rendered="true">
-                        </div>
-                        <div class="card card-outline-secondary border-0">
-                        <div class="card-body">
-                            <h4 class="text-center font-weight-lighter text-break special-title px-2 mb-4">Almost there! Let’s get to Know each other a little bit?</h4>
-                            <form autocomplete="off" class="form" role="form">
-                                <div class="form-group show-helper">
-                                    <my-input label="Personal Address"></my-input>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-5">
-                                        <my-input label="Phone"></my-input>
-                                    </div>
-                                    <div class="col-4">
-                                        <my-input label="Postal Code"></my-input>
-                                    </div>
-                                    <div class="col-3">
-                                        <my-input label="Province"></my-input>
-                                    </div>
-                                </div>
-                                <div class="row my-4" id="map">
-                                </div>
-                                <div class="form-group row show-helper">
-                                    <label class="col-md-12 text-uppercase mbs-5">Date of Birth&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label>
-                                    <div class="col-4">
-                                        <div class="selectdiv">
-                                            <v-select :options="optYear" placeholder="YEAR"></v-select>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="selectdiv">
-                                            <v-select :options="optMonth" placeholder="MONTH"></v-select>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="selectdiv">
-                                            <v-select :options="optDay" placeholder="DAY"></v-select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-md-12 mt-4">
-                                        <button class="btn btn-success btn-lg btn-block shadow btn-extra__rounded" type="submit">Next Step</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        </div>
-                    </div>
-                </div>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <!-- Favicons -->
+      <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicons/favicon.ico">
+      <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="assets/img/favicons/favicon.ico">
+      <link rel="apple-touch-icon" href="assets/img/favicons/favicon.ico" />
+      <!-- SEO -->
+      <title>V-APP</title>
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="apple-mobile-web-app-title" content="V-APP">
+      <meta name="msapplication-TileColor" content="#6fc641">
+      <meta name=theme-color content=#6fc641>
+      <meta name="author" content="V-APP" />
+      <meta name="description" content="A user-friendly app interface for every device." />
+      <!--Polyfills & Browser Fixes-->
+      <link rel="stylesheet" href="assets/css/ie10-viewport-bug-workaround.css" />
+      <script type="text/javascript" src="assets/js/ie10-viewport-bug-workaround.js"></script>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <!--Fonts-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <!--Styles plugins-->
+      <link rel="stylesheet" href="assets/css/vue-select.css" />
+      <!--Styles-->
+      <link rel="stylesheet" href="assets/css/bootstrap-4.3.1-min.css" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <!--Scripts plugins-->
+      <script type="text/javascript" src="assets/js/vue.js"></script>
+      <script type="text/javascript" src="assets/js/vue-select.js"></script>
+   </head>
+   <body>
+      <div id="app">
+         <div class="container py-3 container-small">
+            <div class="row justify-content-center">
+               <div>
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarText">
+                        <!-- <ul class="navbar-nav mr-auto"><li>Menu Items go here</li></ul> -->
+                     </div>
+                  </nav>
+                  <hr class="my-3">
+                  <div class="avatar text-center">
+                     <img src="assets/img/avatar.jpeg" class="rounded-circle" data-holder-rendered="true">
+                  </div>
+                  <div class="card card-outline-secondary border-0">
+                     <div class="card-body">
+                        <h4 class="text-center font-weight-lighter text-break special-title px-2 mb-4">Almost there! Let’s get to Know each other a little bit?</h4>
+                        <form autocomplete="off" class="form" role="form">
+                           <div class="form-group show-helper">
+                              <my-input label="Personal Address"></my-input>
+                           </div>
+                           <div class="form-group row">
+                              <div class="col-5">
+                                 <my-input label="Phone"></my-input>
+                              </div>
+                              <div class="col-4">
+                                 <my-input label="Postal Code"></my-input>
+                              </div>
+                              <div class="col-3">
+                                 <my-input label="Province"></my-input>
+                              </div>
+                           </div>
+                           <div class="row my-4" id="map">
+                           </div>
+                           <div class="form-group row show-helper">
+                              <label class="col-md-12 text-uppercase mbs-5">Date of Birth&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label>
+                              <div class="col-4">
+                                 <div class="selectdiv">
+                                    <v-select :options="optYear" placeholder="YEAR"></v-select>
+                                 </div>
+                              </div>
+                              <div class="col-4">
+                                 <div class="selectdiv">
+                                    <v-select :options="optMonth" placeholder="MONTH"></v-select>
+                                 </div>
+                              </div>
+                              <div class="col-4">
+                                 <div class="selectdiv">
+                                    <v-select :options="optDay" placeholder="DAY"></v-select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group row">
+                              <div class="col-md-12 mt-4">
+                                 <button class="btn btn-success btn-lg btn-block shadow btn-extra__rounded" type="submit">Next Step</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <!-- template for inputs -->
-        <template id="my-input">
-            <div>
-                <label class="text-uppercase">{{label}}&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label> 
-                <input class="form-control extra-rounded mtn-2" required="required" type="text">
-            </div>
-        </template>
-        <!-- template for inputs -->
-        <!--Scripts compoments-->
-        <script type="text/javascript" src="assets/components/vue-component.js"></script>
-        <script type="text/javascript" src="assets/js/script.js"></script>
-    </body>
-<html>
+         </div>
+      </div>
+      <!-- template for inputs -->
+      <template id="my-input">
+         <div>
+            <label class="text-uppercase">{{label}}&nbsp;<i class='fa fa-question-circle-o' aria-hidden='true'></i></label> 
+            <input class="form-control extra-rounded mtn-2" required="required" type="text">
+         </div>
+      </template>
+      <!-- template for inputs -->
+      <!--Scripts compoments-->
+      <script type="text/javascript" src="assets/components/vue-component.js"></script>
+      <script type="text/javascript" src="assets/js/script.js"></script>
+   </body>
+   <html>
