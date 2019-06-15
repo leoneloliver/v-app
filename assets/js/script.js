@@ -32,6 +32,6 @@ var appFunctions = {
                 map.classList.add('open');
             }
         }
-	}			
+     }			
 }	
 appFunctions.init();
